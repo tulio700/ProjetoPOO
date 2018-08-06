@@ -1,25 +1,43 @@
-import java.util.List;
-import java.util.ArrayList;
-
 public class Paciente {
 	private String nome;
-	private int idade;
+	private String raca;
 	private String dataNascimento;
 	private String cpf;
-	private List<String> sintomas;
-	private Prontuario prontuario;
+	private String rg;
+	private String sexo;
+	private String cns;
+	private String nacionalidade;
+	private String cep;
+	private String uf;
+
 
 	
 	public Paciente (){
 	}
 	
-	public Paciente (String nome, int idade, String dataNascimento, String cpf, ArrayList<String> sintomas, Prontuario prontuario) {
+	public Paciente (String nome, String raca, String dataNascimento, String cpf, String rg, String sexo, String cns, String nacionalidade, String cep, String uf) {
 	this.nome = nome;
-	this.idade = idade;
+	this.raca = raca;
 	this.dataNascimento = dataNascimento;
 	this.cpf = cpf;
-	this.sintomas = sintomas;
-	this.prontuario = prontuario;
+	this.rg = rg;
+	this.sexo = sexo;
+	this.cns = cns;
+	this.nacionalidade = nacionalidade;
+	this.cep = cep;
+	this.uf = uf;
+	}
+	
+	public Paciente (String nome, String raca, String dataNascimento, String cpf, String rg, String sexo, String nacionalidade, String cep, String uf) {
+	this.nome = nome;
+	this.raca = raca;
+	this.dataNascimento = dataNascimento;
+	this.cpf = cpf;
+	this.rg = rg;
+	this.sexo = sexo;
+	this.nacionalidade = nacionalidade;
+	this.cep = cep;
+	this.uf = uf;
 	}
 	
 	public String getNome() {
@@ -28,14 +46,6 @@ public class Paciente {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	
-	public int getIdade() {
-		return this.idade;
-	}
-	
-	public void setIdade(int idade) {
-		this.idade = idade;
 	}
 	
 	public String dataNascimento() {
@@ -53,20 +63,64 @@ public class Paciente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
-	public List<String> getSintomas(){
-		return this.sintomas;
+
+	public String getRaca() {
+		return raca;
 	}
-	
-	public void setSintomas(ArrayList<String> sintomas) {
-		this.sintomas = sintomas;
+
+	public void setRaca(String raca) {
+		this.raca = raca;
 	}
-	
-	public Prontuario getProntuario() {
-		return this.prontuario;
+
+	public String getRg() {
+		return rg;
 	}
-	
-	public void setProntuario(Prontuario prontuario) {
-		this.prontuario = prontuario;
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getCns() {
+		return cns;
+	}
+
+	public void setCns(String cns) {
+		this.cns = cns;
+	}
+
+	public String getNacionalidade() {
+		return nacionalidade;
+	}
+
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
+	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
 	}
 }
